@@ -1,0 +1,38 @@
+/*all*/
+::selection{
+	background-color: green;
+	color: white;
+}
+/*
+Container class style definition
+Container class style writing progress : Not finished
+*/
+.container{
+	font-size: 20px;
+	text-align: left;
+}
+/* 
+
+*/
+.centre{
+	text-align: center;
+}
+/*
+
+*/
+.gradient-words{
+	background-image: linear-gradient(to right, skyblue , purple );
+	-webkit-background-clip: text;
+	background-clip: text;
+	-moz-background-clip: text;
+	color: transparent;
+	font-size: 30px;
+}
+.gradient-words-small{
+	background-image: linear-gradient(to right, purple , skyblue);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-moz-background-clip: text;
+	color: transparent;
+	font-size: 30px;
+}
