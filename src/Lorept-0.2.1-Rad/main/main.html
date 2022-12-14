@@ -1,167 +1,35 @@
-/*all*/
-::selection{
-	background-color: green;
-	color: white;
-}
-/*
-Container class style definition
-Container class style writing progress : Not finished
-*/
-.container{
-	font-size: 20px;
-	text-align: left;
-}
-/* 
-
-*/
-.centre{
-	text-align: center;
-}
-/*
-
-*/
-.gradient-words{
-	background-image: linear-gradient(to right, skyblue , purple );
-	-webkit-background-clip: text;
-	background-clip: text;
-	-moz-background-clip: text;
-	color: transparent;
-	font-size: 30px;
-}
-.gradient-words-small{
-	background-image: linear-gradient(to right, purple , skyblue);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-moz-background-clip: text;
-	color: transparent;
-	font-size: 30px;
-}
-/*
-
-*/
-.nav{
-	text-align: center;
-	padding: 20px;
-	background-color: #5c6;
-	margin: -10px;
-}
-.nav-a:link{
-	padding: 20px;
-	background-color: #5c6;
-	text-decoration: none;
-	color: #fff;
-	transition: 0.5s;
-}
-.nav-a:visited{
-	padding: 20px;
-	background-color: #5c6;
-	text-decoration: none;
-	color: #fff;
-	transition: 0.5s;
-}
-.nav-a:hover{
-	padding: 20px;
-	background-color: #2c6;
-	text-decoration: underline;
-	color: #fff;
-	transition: 0.5s;
-}
-/*
-
-*/
-.cont{
-	position: relative;
-	top: 20px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	background-color: #fff;
-	width: 300px;
-	height: 100px;
-	box-shadow: #5c6 1px 1px 10px 5px ;
-	transition: 0.45s;
-}
-.cont .con{
-	display: none;
-	transition: 0.45s;
-}
-.cont:hover{
-	position: relative;
-	top: 20px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	background-color: #fff;
-	width: 600px;
-	height: 100px;
-	box-shadow: #5c6 1px 1px 10px 5px ;
-	transition: 0.45s;
-}
-.cont:hover .con{
-	position: relative;
-	top: -10px;
-	display: block;
-	color: #2c6;
-	transition: 0.45s;
-}
-/*
-
-*/
-.cot{
-	position: relative;
-	top: 20px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	background-color: #fff;
-	width: 650px;
-	height: 550px;
-	box-shadow: #5c6 1px 1px 10px 5px ;
-	transition: 0.45s;
-}
-.cot .con{
-	display: none;
-	transition: 0.45s;
-}
-.cot:hover{
-	position: relative;
-	top: 20px;
-	padding: 10px;
-	margin: 10px;
-	border-radius: 20px;
-	background-color: #fff;
-	width: 650px;
-	height: 550px;
-	box-shadow: #5c6 1px 1px 10px 5px ;
-	transition: 0.45s;
-}
-.cot:hover .con{
-	position: relative;
-	top: -10px;
-	display: block;
-	color: #2c6;
-	transition: 0.45s;
-}
-/*
-
-*/
-.src:link{
-	text-decoration: none;
-	color: #0f5;
-	transition: 0.45s;
-}
-.src:visited{
-	text-decoration: none;
-	color: #0f5;
-	transition: 0.45s;
-}
-.src:hover{
-	text-decoration: underline;
-	color: #0f7;
-	transition: 0.45s;
-}
-.src:hover{
-	text-decoration: underline;
-	color: #af6;
-	transition: 0.45s;
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lorept-数据包生成器-Rad版</title>
+		<script src="../js/main.js"></script>
+		<script src="../js/Extend/api.js"></script>
+		<script src="../js/Plugins/api.js"></script>
+		<link rel="icon" href="../css/Resource/icon.jfif">
+		<link rel="stylesheet" href="../css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="container">
+				<nav class="nav">
+					<a href="#" class="nav-a">首页(index)</a>
+					<a href="#" class="nav-a">帮助(help)</a>
+					<a href="datapack.html" class="nav-a">数据包生成器(Packet Generator)</a>
+					<a href="Wiki.html" class="nav-a">Minecraft Wiki(Wiki)</a>
+				</nav>
+			</div>
+			<div class="container">
+				<div class="centre">
+					<h1 class="gradient-words" style="font-size: 60px;position: relative;top: 200px;">欢迎使用Lorept我的世界数据包生成器!</h1>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+			body{
+				background-image: url("../css/Resource/bg.jpg");
+				background-size: 110%;
+			}
+		</style>
+	</body>
+</html>
