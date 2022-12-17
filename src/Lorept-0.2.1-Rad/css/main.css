@@ -1,4 +1,7 @@
 /*all*/
+body{
+	overflow-x:hidden;
+}
 ::selection{
 	background-color: green;
 	color: white;
