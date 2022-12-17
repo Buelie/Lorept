@@ -19,16 +19,35 @@
 					<a href="Wiki.html" class="nav-a">Minecraft Wiki(Wiki)</a>
 				</nav>
 			</div>
+			<div class="cont" style="height: 105px;" onmouseover="notice()" >
+				<h1 class="gradient-words">我们想请你喝杯茶!!!</h1>
+				<p class="con" id="notice">JS开发者快来看看!快来写点插件吧!</p>
+			</div>
 			<div class="container">
 				<div class="centre">
-					<h1 class="gradient-words" style="font-size: 60px;position: relative;top: 200px;">欢迎使用Lorept我的世界数据包生成器!</h1>
+					<h1 class="gradient-words" style="font-size: 60px;position: relative;top: 120px;">欢迎使用Lorept我的世界数据包生成器!</h1>
 				</div>
 			</div>
 		</div>
 		<style type="text/css">
+			@keyframes bg{
+				0%{
+					background-image: url("../css/Resource/bg.jpg");
+					transition: 0.5s;
+				}
+				50%{
+					background-image: url("../css/Resource/icon.jfif");
+					transition: 0.5s;
+				}
+				100%{
+					background-image: url("../css/Resource/bg.jpg");
+					transition: 0.5s;
+				}
+			}
 			body{
 				background-image: url("../css/Resource/bg.jpg");
-				background-size: 110%;
+				background-size: 100%;
+				animation: bg 5s infinite;
 			}
 		</style>
 	</body>
