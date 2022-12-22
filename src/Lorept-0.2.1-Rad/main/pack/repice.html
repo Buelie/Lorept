@@ -29,39 +29,90 @@
 	<div class="container" style="text-align: center;background-color: #fff;position: fixed;bottom: 0px;top: 120px;right: 0px;left: 0px;">
 		<h1>数据包生成</h1>
 		<div class="cont">
-			<select name="one">
+			<select name="one" id="one">
 				<option value="iron_ingot">铁锭</option>
 			</select>
-			<select name="two">
+			<select name="two" id="two">
 				<option value="iron_ingot">铁锭</option>
 			</select>
-			<select name="three">
+			<select name="three" id="three">
 				<option value="iron_ingot">铁锭</option>
 			</select><br>
-			<select name="four">
+			<select name="four" id="four">
 				<option value="iron_ingot">铁锭</option>
 			</select>
-			<select name="five">
+			<select name="five" id="five">
 				<option value="iron_ingot">铁锭</option>
 			</select>
-			<select name="six">
+			<select name="six" id="six">
 				<option value="iron_ingot">铁锭</option>
 			</select><br>
-			<select name="seven">
+			<select name="seven" id="seven">
 				<option value="iron_ingot">铁锭</option>
 			</select>
-			<select name="eight">
+			<select name="eight" id="eight">
 				<option value="iron_ingot">铁锭</option>
 			</select>
-			<select name="night">
+			<select name="night" id="night">
+				<option value="iron_ingot">铁锭</option>
+			</select><br>
+			<h4>结果:</h4>
+			<select name="night" id="ten">
 				<option value="iron_ingot">铁锭</option>
 			</select>
+			<h4>数量:</h4>
+			<input type="text" id="num" class="input-group-sm">
 		</div>
-		<div class="container">
+		<div class="container" id="neir" onclick="sc()">
 			<span class="glyphicon glyphicon-cog" style="font-size: 160px;position: relative;top: 50px;"></span>
-			<h1 style="position: relative;top: 60px;">页面正在施工中！</h1>
+			<h1 style="position: relative;top: 60px;" >页面正在施工中！</h1>
 		</div>
 	</div>
+	<script type="text/javascript">
+		function sc(){
+			document.getElementById("neir").innerHTML='{\
+				"type": "crafting_shaped",\
+				"pattern":[\
+					"123",\
+					"456",\
+					"789"\
+				],\
+				"key":{\
+					"1":{\
+						"item":"minecraft:'+document.getElementById("one").value+'"\
+					},\
+					"2":{\
+						"item":"minecraft:'+document.getElementById("two").value+'"\
+					},\
+					"3":{\
+						"item":"minecraft:'+document.getElementById("three").value+'"\
+					},\
+					"4":{\
+						"item":"minecraft:'+document.getElementById("four").value+'"\
+					},\
+					"5":{\
+						"item":"minecraft:'+document.getElementById("five").value+'"\
+					},\
+					"6":{\
+						"item":"minecraft:'+document.getElementById("six").value+'"\
+					},\
+					"7":{\
+						"item":"minecraft:'+document.getElementById("seven").value+'"\
+					},\
+					"8":{\
+						"item":"minecraft:'+document.getElementById("eight").value+'"\
+					},\
+					"9":{\
+						"item":"minecraft:'+document.getElementById("night").value+'"\
+					}\
+				},\
+				"result":{\
+					"item":"minecraft'+document.getElementById("ten").value+'",\
+					"count":"'+document.getElementById("num").value+'"\
+				}\
+			}'
+		}
+	</script>
 	<style type="text/css">
 		body{
 			background-image: url("../../css/Resource/bg.jpg");
